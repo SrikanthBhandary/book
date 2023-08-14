@@ -74,6 +74,11 @@ Using `grub-mkrescue` is easy. We run this command:
 ```bash
 $ grub-mkrescue -o os.iso isofiles
 ```
+**Note**:
+If you are building the things in WSL when making iso files, use the followig command, that will solve the issue.
+
+    sudo apt-get install  grub-pc-bin
+ 
 
 The `-o` flag controls the *o*utput filename, which we choose to be `os.iso`.
 And then we pass it the directory to make the ISO out of, which is the
